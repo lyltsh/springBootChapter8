@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 实体类
  */
 @Entity
-@NamedQuery(name = "PersonRepository.withNameAndAddressNamedQuery",
+@NamedQuery(name = "Person.withNameAndAddressNamedQuery",
 query = "select p from Person p where p.name=?1 and p.address=?2")
 public class Person implements Serializable {
     private static final long serialVersionUID = 1L;
