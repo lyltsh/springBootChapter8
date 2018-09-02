@@ -19,6 +19,8 @@ public class RedisController {
     @RequestMapping("/set")
     public void set() {
         Person person = new Person("1", 32, "ll");
+        person.setId(1L);
+        System.out.println(person);
         personDao.save(person);
         personDao.stringRedisTemplateDemo();
     }

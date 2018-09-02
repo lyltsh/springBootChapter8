@@ -34,7 +34,7 @@ public class PersonDao {
     }
 
     public void save(Person person) {
-        valueOps.set(person.getId(), person);
+        valueOps.set(String.valueOf(person.getId()), person);
     }
 
     public String getString() {
